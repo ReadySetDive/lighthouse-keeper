@@ -1,0 +1,24 @@
+config_version=5
+
+[application]
+
+config/name="Lighthouse Keeper"
+run/main_scene="res://main.tscn"
+boot_splash/show_image=false
+boot_splash/bg_color=Color(0.043, 0.051, 0.102, 1)
+
+[display]
+
+; A phone-shaped window when run on desktop; on the web the canvas fills the browser
+window/size/viewport_width=405
+window/size/viewport_height=880
+; The game does its own whole-number pixel scaling (main.gd _layout)
+window/stretch/mode="disabled"
+window/dpi/allow_hidpi=true
+
+[rendering]
+
+; The web export only supports the Compatibility renderer
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.043, 0.051, 0.102, 1)
